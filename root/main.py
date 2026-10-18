@@ -1,5 +1,5 @@
 # Variables
-state = "cell"
+state = "escape"
 bed_inspected = False
 toilet_inspected = False
 bars_inspected = False
@@ -436,7 +436,8 @@ while True:
             print("Can you really trust them?")
 
             print("\nType 'what now' to see where your freedom leads you")
-
+            feeling = input("What do you want to do? ").strip().lower()
+        # add an input
         if feeling == "what now":
             state = "what now"
         else:
@@ -446,10 +447,10 @@ while True:
     elif state == "what now":
         print("\nYou stand confused")
         print("The shadow in the car says you have two choices")
-        print("'work for me'")
+        print("\n'work for me'")
         print("go and be free")
         print("You know one is a lie but the options is in your hands")
-        print("Your Options:")
+        print("\nYour Options:")
         print("work for him")
         print("run away")
         feeling = input("What do you want to do? ").strip().lower()
