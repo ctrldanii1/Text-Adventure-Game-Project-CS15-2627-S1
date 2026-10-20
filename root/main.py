@@ -1,5 +1,5 @@
 # Variables
-state = "escape"
+state = "cell"
 bed_inspected = False
 toilet_inspected = False
 bars_inspected = False
